@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+category = Category.create!(name: 'software')
+
+Event.create!(description: 'independence day', effective_date: Date.today, image_url: 'http://www.image.com', category_id: category.id)

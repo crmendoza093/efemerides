@@ -1,11 +1,32 @@
 # Efemerides
 
+## Features
+
+- You can check the events by filtering by `by_effective_date`, `matching_description`, `current`.
+- When you archive a category, it archives the associated events.
+- By default, the events with the date of the current day are returned.
+
 ## Setup
+
+To configure the connection with the database you must change the credentials in the file `.env`.
 
 Just run the setup script to configure the app:
 
 ```bash
-  bin/setup
+  bin/bundle
+```
+
+then create the db
+
+```bash
+  rails db:create
+  rails db:migrate
+```
+
+then use initial data run the seed
+
+```bash
+  rails db:seed
 ```
 
 then run the tests
