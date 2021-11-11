@@ -1,0 +1,3 @@
+es:
+  errors:
+    event_archived: No se puede actualizar un evento archivado.

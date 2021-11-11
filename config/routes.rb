@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  health_check_routes
+
+  namespace :v1, defaults: { format: :json } do
+    resources :categories
+    resources :events
+  end
 end
