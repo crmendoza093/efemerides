@@ -1,0 +1,3 @@
+base: &base
+  name: musica
+  status: available

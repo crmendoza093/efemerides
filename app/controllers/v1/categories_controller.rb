@@ -18,7 +18,7 @@ module V1
 
     def update
       @category.update(category_params)
-      @category.event.archived! if archived?
+      @category.event&.archived! if archived?
       @category.save!
 
       render json: @category

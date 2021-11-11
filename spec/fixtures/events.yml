@@ -1,0 +1,6 @@
+base:
+  description: dev day
+  effective_date: 10/11/2021
+  image_url: http://www.iamge.com
+  status: available
+  category: base
